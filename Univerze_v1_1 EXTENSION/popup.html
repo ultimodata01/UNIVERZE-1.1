@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Univerze</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="logo">U</div>
+      <div class="title-group">
+        <h1>Univerze</h1>
+        <p class="subtitle">AI &harr; Unity Bridge</p>
+      </div>
+    </div>
+
+    <div class="status-card">
+      <div class="status-row">
+        <span class="status-label">Status</span>
+        <span class="status-indicator" id="status">
+          <span class="dot"></span>
+          <span class="status-text">Checking...</span>
+        </span>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="port">Bridge Port</label>
+      <div class="input-wrapper">
+        <input type="number" id="port" value="12345" placeholder="12345">
+      </div>
+    </div>
+
+    <button id="save" class="btn-primary">
+      <span>Save Settings</span>
+    </button>
+
+    <button id="test" class="btn-secondary">
+      <span>Test Connection</span>
+    </button>
+
+    <div class="footer">
+      <p>Run <code>bridge.bat</code> to start the local bridge server.</p>
+    </div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
